@@ -3,8 +3,9 @@
 form {
     border: 3px solid orange;
     align-content: center;
-    margin-left: 500pt;
-    margin-right: 50pt;
+    width: 500px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 img {
