@@ -1,10 +1,12 @@
 /* Bordered form */
-
+body {
+    font-family: helvetica, arial, verdana, sans-serif;
+    color: orange;
+}
 @media screen and (max-width: 450px) {
     form {
         
         align-content: center;
-       
         position: relative;
         margin: 20pt;
         height: 80%;
@@ -24,6 +26,11 @@
 }
 
 .box {
+    position: relative;
+    align-items: center;
+    margin: 100pt;
+    width: 20em;
+    size: 20%;
     -webkit-border-radius: 20px;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 12px 0px #000;
