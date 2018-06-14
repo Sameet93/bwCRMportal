@@ -18,8 +18,8 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: lightsalmon;
+    color: white;
 }
 
 /* Add an active class to highlight the current page */
@@ -57,3 +57,13 @@
     }
   }
 /* Navigation Bar  End*/
+/* Headings*/
+
+h1
+{
+    text-align: center;
+    width: 100%;
+    background: orange;
+    color: white;
+    
+}
