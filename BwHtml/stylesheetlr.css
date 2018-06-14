@@ -1,9 +1,27 @@
 /* Bordered form */
 
-form {
-    border: 3px solid orange;
-    align-content: center;
-    
+@media screen and (max-width: 450px) {
+    form {
+        border: 3px solid orange;
+        align-content: center;
+        box-shadow: 5px 5px 5px 5px orange;
+        position: relative;
+        margin: 20pt;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 2400px) {
+    form {
+        align-self: center;
+        border: 3px solid orange;
+        align-content: center;
+        box-shadow: 5px 5px 5px orange;
+        position: relative;
+        margin: 20pt;
+        height: 75%;
+        
+    }
 }
 
 img {
