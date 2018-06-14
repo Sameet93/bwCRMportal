@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bwJavascript.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
@@ -22,16 +23,6 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
     <form>
         <div>
             <div class="container">
@@ -44,28 +35,48 @@
                         </div>
                         <div id="collapse1" class="panel-collapse collapse in">
                             <div class="panel-body">
-
-                                <input type="submit" value="30MB">
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <input type="submit" value="50MB">
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <input type="submit" value="100MB">
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <input type="submit" value="500MB">
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <input type="submit" value="1GB">
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <input type="submit" value="5GB">
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <input type="submit" value="10GB">
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
+                                <div>
+                                    <button type="submit" value="30MB">30MB</button>
+                                    <button id="down" onclick="modify_qty(-1)">-1</button>
+                                    <input id="qty" value="0" />
+                                    <button id="up" onclick="modify_qty(1)">+1</button>
+                                </div>
+                                <div>
+                                    <button type="submit" value="50MB">50MB</button>
+                                    <button id="down" onclick="modify_qty(-1)">-1</button>
+                                    <input id="qty" value="0" />
+                                    <button id="up" onclick="modify_qty(1)">+1</button>
+                                </div>
+                                <div>
+                                    <button type="submit" value="100MB">100MB</button>
+                                    <button id="down" onclick="modify_qty(-1)">-1</button>
+                                    <input id="qty" value="0" />
+                                    <button id="up" onclick="modify_qty(1)">+1</button>
+                                </div>
+                                <div>
+                                    <button type="submit" value="500MB">500MB</button>
+                                    <button id="down" onclick="modify_qty(-1)">-1</button>
+                                    <input id="qty" value="0" />
+                                    <button id="up" onclick="modify_qty(1)">+1</button>
+                                </div>
+                                <div>
+                                    <button type="submit" value="1GB">1GB</button>
+                                    <button id="down" onclick="modify_qty(-1)">-1</button>
+                                    <input id="qty" value="0" />
+                                    <button id="up" onclick="modify_qty(1)">+1</button>
+                                </div>
+                                <div>
+                                    <button type="submit" value="5GB">5GB</button>
+                                    <button id="down" onclick="modify_qty(-1)">-1</button>
+                                    <input id="qty" value="0" />
+                                    <button id="up" onclick="modify_qty(1)">+1</button>
+                                </div>
+                                <div>
+                                    <button type="submit" value="10GB">10GB</button>
+                                    <button id="down" onclick="modify_qty(-1)">-1</button>
+                                    <input id="qty" value="0" />
+                                    <button id="up" onclick="modify_qty(1)">+1</button>
+                                </div>
 
                             </div>
                         </div>
@@ -78,28 +89,28 @@
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
-
-                                <input type="submit" value="30MB">
+                                <button type="submit" value="30MB">30MB</button>
                                 <input type="checkbox" name="vehicle" value="Select">
                                 <br>
-                                <input type="submit" value="50MB">
+                                <button type="submit" value="50MB">50MB</button>
                                 <input type="checkbox" name="vehicle" value="Select">
                                 <br>
-                                <input type="submit" value="100MB">
+                                <button type="submit" value="100MB">100MB</button>
                                 <input type="checkbox" name="vehicle" value="Select">
                                 <br>
-                                <input type="submit" value="500MB">
+                                <button type="submit" value="500MB">500MB</button>
                                 <input type="checkbox" name="vehicle" value="Select">
                                 <br>
-                                <input type="submit" value="1GB">
+                                <button type="submit" value="1GB">1GB</button>
                                 <input type="checkbox" name="vehicle" value="Select">
                                 <br>
-                                <input type="submit" value="5GB">
+                                <button type="submit" value="5GB">5GB</button>
                                 <input type="checkbox" name="vehicle" value="Select">
                                 <br>
-                                <input type="submit" value="10GB">
+                                <button type="submit" value="10GB">10GB</button>
                                 <input type="checkbox" name="vehicle" value="Select">
                                 <br>
+                                <button type="button" value="upgrade">Upgrade your package</button>
                             </div>
                         </div>
                     </div>
@@ -112,7 +123,9 @@
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body">
-
+                                <label type="text">
+                                    <strong>You currently have the 2Mbps package, would you like to upgrade?</strong>
+                                    <button type="button" value="upgrade">Upgrade Package</button>
                             </div>
                         </div>
                     </div>
@@ -127,6 +140,12 @@
                         <tr>
                             <td>50MB</td>
                             <td>R12</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Total:</b>
+                            </td>
+                            <td>RXXX-xx</td>
                         </tr>
                     </table>
                     <input type="submit" name="Proceed" value="Proceed">

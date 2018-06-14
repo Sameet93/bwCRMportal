@@ -2,9 +2,9 @@
 
 @media screen and (max-width: 450px) {
     form {
-        border: 3px solid orange;
+        
         align-content: center;
-        box-shadow: 5px 5px 5px 5px orange;
+       
         position: relative;
         margin: 20pt;
         height: 80%;
@@ -14,14 +14,20 @@
 @media screen and (max-width: 2400px) {
     form {
         align-self: center;
-        border: 3px solid orange;
+       
         align-content: center;
-        box-shadow: 5px 5px 5px orange;
+        
         position: relative;
         margin: 20pt;
         height: 75%;
-        
     }
+}
+
+.box {
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 12px 0px #000;
+    box-shadow: 0px 0px 12px 0px #000;
 }
 
 img {
@@ -67,10 +73,10 @@ button:hover {
 
 /* Extra style for the cancel button (red) */
 
-.cancelbtn {
+.signupbutton {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: orange;
 }
 
 /* Center the avatar image inside this container */
@@ -90,7 +96,10 @@ img.avatar {
 /* Add padding to containers */
 
 .container {
+  
     padding: 16px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
 }
 
 /* The "Forgot password" text */
