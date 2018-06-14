@@ -3,6 +3,10 @@
 
 <head>
     <title>MySurf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -16,28 +20,92 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <h1>Help</h1>
     <form>
-        <div class="body">
-            <h4>What is your Query?</h4>
-            <select name="Query?">
-                <option value="Site Down">My internet is not working</option>
-                <option value="Speed">My internet is Slow</option>
-                <option value="Payment">I'm having an issue paying</option>
-                <option value="Other">Other</option>
-            </select>
-            <div>
-                <textarea name="addedDetails" rows="5" cols="20">
-            Please give us more details about the problems you are experiencing 
-        </textarea>
-            </div>
-            <input type="submit" value="Send Link">
-            <div>
-                <h4>FAQ's</h4>
-                <p>FAQ question</p>
-                <p>FAQ answer</p>
-            </div>
-        </div>
+        <h1>Help</h1>
+        <div>
+            <div class="container">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Contact Us</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <h4>What is your Query?</h4>
+                                <select name="Query?">
+                                    <option value="Site Down">My internet is not working</option>
+                                    <option value="Speed">My internet is Slow</option>
+                                    <option value="Payment">I'm having an issue paying</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div>
+                                    <textarea name="addedDetails" rows="5" cols="20">
+                                    Please give us more details about the problems you are experiencing 
+                                </textarea>
+                                </div>
+                                <button type="submit" value="Send Link">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>FAQ's</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Slow Connection?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">No Connection?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">How do I Top Up?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">How Do I Pay?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.
+                                </div>
+                            </div>
+                        </div>
     </form>
 
 </body>
