@@ -33,67 +33,104 @@
         }
     </script>
     <form>
-        <h5>Wifi Top Up</h5>
-        <div class="body" title="Wifi Top Up">
-            <input type="submit" value="30MB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="50MB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="100MB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="500MB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="1GB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="5GB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="10GB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-        </div>
-        <h5>Home Connect Top Up</h5>
-        <div class="body" title="Home Connect">
-            <input type="submit" value="30MB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="50MB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="100MB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="500MB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="1GB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="5GB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-            <input type="submit" value="10GB">
-            <input type="checkbox" name="vehicle" value="Select">
-            <br>
-        </div>
-        <div class="Calcuation" title="tCost">
-            <table>
-                <tr>
-                    <th>Product</th>
-                    <th>Cost</th>
-                </tr>
-                <tr>
-                    <td>50MB</td>
-                    <td>R12</td>
-                </tr>
-            </table>
-            <input type="submit" name="Proceed" value="Proceed">
-        </div>
+        <div>
+            <div class="container">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Public Wifi</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+
+                                <input type="submit" value="30MB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="50MB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="100MB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="500MB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="1GB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="5GB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="10GB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="billing" class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Home Connect</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                <input type="submit" value="30MB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="50MB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="100MB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="500MB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="1GB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="5GB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                                <input type="submit" value="10GB">
+                                <input type="checkbox" name="vehicle" value="Select">
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Business Connect</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Calcuation" title="tCost">
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th>Cost</th>
+                        </tr>
+                        <tr>
+                            <td>50MB</td>
+                            <td>R12</td>
+                        </tr>
+                    </table>
+                    <input type="submit" name="Proceed" value="Proceed">
+                </div>
     </form>
 </body>
 
