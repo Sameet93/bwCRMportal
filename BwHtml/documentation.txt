@@ -1,9 +1,7 @@
 -- ToDo List Sameet --
 
 - css stylesheet - 17 June
-- profile page - 13 June
-- help page - 13 June
-- create menu - 14 June
+- payment confirmation page -14 June
 - design graphs and other key elements - 15 June
 - configure css and js(if required) - 15 June
 - make sure all the pages function correctly - 16 June
