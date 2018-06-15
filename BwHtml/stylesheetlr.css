@@ -1,40 +1,48 @@
 /* Bordered form */
+
 body {
+    background: url(background.jpg) no-repeat center center;
+    background-repeat: none;
+    background-size: 2460px 1000px;
     font-family: helvetica, arial, verdana, sans-serif;
     color: orange;
 }
-@media screen and (max-width: 450px) {
-    form {
-        
-        align-content: center;
-        position: relative;
-        margin: 20pt;
-        height: 80%;
-    }
+
+form {
+    align-self: center;
+    align-content: center;
+    position: relative;
+    margin: 20pt;
+    height: 100%;
 }
 
-@media screen and (max-width: 2400px) {
-    form {
-        align-self: center;
-       
-        align-content: center;
-        
-        position: relative;
-        margin: 20pt;
-        height: 75%;
-    }
+.parent {
+    display: table;
+    margin: 0 auto;
+    height: 100%;
 }
 
 .box {
-    position: relative;
-    align-items: center;
-    margin: 100pt;
+    background-color: white;
+    display: table-cell;
+    vertical-align: middle;
     width: 20em;
-    size: 20%;
     -webkit-border-radius: 20px;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 12px 0px #000;
     box-shadow: 0px 0px 12px 0px #000;
+}
+
+.boxR {
+    background-color: white;
+    display: table-cell;
+    vertical-align: middle;
+    width: 40em;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 12px 0px #000;
+    box-shadow: 0px 0px 12px 0px #000;
+    height: auto;
 }
 
 img {
@@ -58,17 +66,38 @@ input {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
 }
 
+input[type=text]:focus, textarea:focus, [type=password]:focus {
+    box-shadow: 0 0 5px orange;
+    border: 1px solid orange;
+}
+
+.disable_text_highlighting {
+    -webkit-user-select: none; /* Webkit */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE 10  */
+    /* Currently not supported in Opera but will be soon */
+    -o-user-select: none;
+    user-select: none;
+    }
 /* Set a style for all buttons */
 
 button {
+    margin: auto;
     background-color: orange;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 10px 18px;
     border: none;
     cursor: pointer;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 12px 0px #000;
+    box-shadow: 0px 0px 5px 0px #000;
     width: 100%;
 }
 
@@ -100,10 +129,13 @@ img.avatar {
     border-radius: 50%;
 }
 
+.fpsw:hover {
+    opacity: 0.5;
+}
+
 /* Add padding to containers */
 
 .container {
-  
     padding: 16px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
