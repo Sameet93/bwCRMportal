@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MySurf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bwJavascript.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <!-- Boostrap 4.1.1
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="dashboard.html" >Home</a>
+        <a href="topup.html">Top Up</a>
+        <a href="myaccount.html">My Account</a>
+        <a href="help.html">Help</a>
+        <a href="profile.html">My Account</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h3 class="headings">Products</h3>
+    <!-- Panel Group-->
+    <div class="panel-group" id="accordion">
+        <!--Public WiFi Panel-->
+        <div class="panel panel-default" id="publicwifi_pnl">
+            <div class="panel-heading"  data-toggle="collapse" data-parent="#accordion" href="#CollapseProdWifi">
+                <h4 class="panel-title">
+                    <a>Public Wifi</a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse-in" id="CollapseProdWifi">
+                <div class="panel-body" >
+                    Enter various wifi products here :)
+                </div>
+            </div>
+        </div>
+        <!--Home Connect Panel-->
+        <div class="panel panel-default" id="homeconnect_pnl">
+                <div class="panel-heading"  data-toggle="collapse" data-parent="#accordion" href="#CollapseProdHome">
+                    <h4 class="panel-title">
+                        <a>Home Connect</a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse" id="CollapseProdHome">
+                    <div class="panel-body" >
+                        Enter various wifi products here :)
+                        You have the following WiFI products: <br>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--Business Connect Panel-->
+        <div class="panel panel-default" id="businessconnect_pnl">
+                <div class="panel-heading"  data-toggle="collapse" data-parent="#accordion" href="#CollapseProdHome">
+                    <h4 class="panel-title">
+                        <a>Business Connect</a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse" id="CollapseProdHome">
+                    <div class="panel-body" >
+                        Enter various wifi products here :)
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</body>
+
+</html>
