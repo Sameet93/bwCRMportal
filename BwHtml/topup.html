@@ -1,156 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="stylesheet.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script type="text/javascript" src="bwJavascript.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--TopBar-->
+        <div class="topbar">
+            <ul>
+                <li><a href="myaccount.html#products">Sipho Dlamini Cust No:#SIP234C8</a></li>
+                <li> <a href="dashboard.html"> Surfer Zone</a></li>
+                <li>50MB</li>
+                <li> <i class="fa"></i> </li>
+            </ul>
+            
+            <i  id="menu_icon" class="fas fa-bars " href="#" onclick="openNav()"></i>
+            
+        </div>
+        <!--Side Navigation-->
+        <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="dashboard.html">Home</a>
+            <a href="topup.html">Top Up</a>
+            <a href="myaccount.html" class="active">My Account <i class="far fa-user"></i> </a>
+            <a href="myaccount.html#products_pnl">Products</a>
+            <a href="myaccount.html#billing_pnl">Billing</a>
+            <a href="help.html">Help</a>
+        </div>
+        <h1>Top Up</h1>
 
-<head>
-    <title>MySurf</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="bwJavascript.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+        <!-- Top Up Container-->
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Public Wifi</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div>
+                            <button type="submit" value="30MB">30MB</button>
+                            <button id="down" onclick="modify_qty(-1)">-1</button>
+                            <input id="qty" value="0" />
+                            <button id="up" onclick="modify_qty(1)">+1</button>
+                        </div>
+                        <div>
+                            <button type="submit" value="50MB">50MB</button>
+                            <button id="down" onclick="modify_qty(-1)">-1</button>
+                            <input id="qty" value="0" />
+                            <button id="up" onclick="modify_qty(1)">+1</button>
+                        </div>
+                        <div>
+                            <button type="submit" value="100MB">100MB</button>
+                            <button id="down" onclick="modify_qty(-1)">-1</button>
+                            <input id="qty" value="0" />
+                            <button id="up" onclick="modify_qty(1)">+1</button>
+                        </div>
+                        <div>
+                            <button type="submit" value="500MB">500MB</button>
+                            <button id="down" onclick="modify_qty(-1)">-1</button>
+                            <input id="qty" value="0" />
+                            <button id="up" onclick="modify_qty(1)">+1</button>
+                        </div>
+                        <div>
+                            <button type="submit" value="1GB">1GB</button>
+                            <button id="down" onclick="modify_qty(-1)">-1</button>
+                            <input id="qty" value="0" />
+                            <button id="up" onclick="modify_qty(1)">+1</button>
+                        </div>
+                        <div>
+                            <button type="submit" value="5GB">5GB</button>
+                            <button id="down" onclick="modify_qty(-1)">-1</button>
+                            <input id="qty" value="0" />
+                            <button id="up" onclick="modify_qty(1)">+1</button>
+                        </div>
+                        <div>
+                            <button type="submit" value="10GB">10GB</button>
+                            <button id="down" onclick="modify_qty(-1)">-1</button>
+                            <input id="qty" value="0" />
+                            <button id="up" onclick="modify_qty(1)">+1</button>
+                        </div>
 
-<body>
-    <div class="topnav" id="myTopnav">
-        <a href="dashboard.html">Home</a>
-        <a href="topup.html" class="active">Top Up</a>
-        <a href="myaccount.html">My Account</a>
-        <a href="help.html">Help</a>
-        <a href="profile.html">My Account</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <form>
-        <div>
-            <div class="container">
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Public Wifi</a>
-                            </h4>
-                        </div>
-                        <div id="collapse1" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <div>
-                                    <button type="submit" value="30MB">30MB</button>
-                                    <button id="down" onclick="modify_qty(-1)">-1</button>
-                                    <input id="qty" value="0" />
-                                    <button id="up" onclick="modify_qty(1)">+1</button>
-                                </div>
-                                <div>
-                                    <button type="submit" value="50MB">50MB</button>
-                                    <button id="down" onclick="modify_qty(-1)">-1</button>
-                                    <input id="qty" value="0" />
-                                    <button id="up" onclick="modify_qty(1)">+1</button>
-                                </div>
-                                <div>
-                                    <button type="submit" value="100MB">100MB</button>
-                                    <button id="down" onclick="modify_qty(-1)">-1</button>
-                                    <input id="qty" value="0" />
-                                    <button id="up" onclick="modify_qty(1)">+1</button>
-                                </div>
-                                <div>
-                                    <button type="submit" value="500MB">500MB</button>
-                                    <button id="down" onclick="modify_qty(-1)">-1</button>
-                                    <input id="qty" value="0" />
-                                    <button id="up" onclick="modify_qty(1)">+1</button>
-                                </div>
-                                <div>
-                                    <button type="submit" value="1GB">1GB</button>
-                                    <button id="down" onclick="modify_qty(-1)">-1</button>
-                                    <input id="qty" value="0" />
-                                    <button id="up" onclick="modify_qty(1)">+1</button>
-                                </div>
-                                <div>
-                                    <button type="submit" value="5GB">5GB</button>
-                                    <button id="down" onclick="modify_qty(-1)">-1</button>
-                                    <input id="qty" value="0" />
-                                    <button id="up" onclick="modify_qty(1)">+1</button>
-                                </div>
-                                <div>
-                                    <button type="submit" value="10GB">10GB</button>
-                                    <button id="down" onclick="modify_qty(-1)">-1</button>
-                                    <input id="qty" value="0" />
-                                    <button id="up" onclick="modify_qty(1)">+1</button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div id="billing" class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Home Connect</a>
-                            </h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <button type="submit" value="30MB">30MB</button>
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <button type="submit" value="50MB">50MB</button>
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <button type="submit" value="100MB">100MB</button>
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <button type="submit" value="500MB">500MB</button>
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <button type="submit" value="1GB">1GB</button>
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <button type="submit" value="5GB">5GB</button>
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <button type="submit" value="10GB">10GB</button>
-                                <input type="checkbox" name="vehicle" value="Select">
-                                <br>
-                                <button type="button" value="upgrade">Upgrade your package</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Business Connect</a>
-                            </h4>
-                        </div>
-                        <div id="collapse3" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <label type="text">
-                                    <strong>You currently have the 2Mbps package, would you like to upgrade?</strong>
-                                    <button type="button" value="upgrade">Upgrade Package</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
-
-                <div class="Calcuation" title="tCost">
-                    <table>
-                        <tr>
-                            <th>Product</th>
-                            <th>Cost</th>
-                        </tr>
-                        <tr>
-                            <td>50MB</td>
-                            <td>R12</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <b>Total:</b>
-                            </td>
-                            <td>RXXX-xx</td>
-                        </tr>
-                    </table>
-                    <input type="submit" name="Proceed" value="Proceed">
+            </div>
+            <div id="billing" class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Home Connect</a>
+                    </h4>
                 </div>
-    </form>
-</body>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <button type="submit" value="30MB">30MB</button>
+                        <input type="checkbox" name="vehicle" value="Select">
+                        <br>
+                        <button type="submit" value="50MB">50MB</button>
+                        <input type="checkbox" name="vehicle" value="Select">
+                        <br>
+                        <button type="submit" value="100MB">100MB</button>
+                        <input type="checkbox" name="vehicle" value="Select">
+                        <br>
+                        <button type="submit" value="500MB">500MB</button>
+                        <input type="checkbox" name="vehicle" value="Select">
+                        <br>
+                        <button type="submit" value="1GB">1GB</button>
+                        <input type="checkbox" name="vehicle" value="Select">
+                        <br>
+                        <button type="submit" value="5GB">5GB</button>
+                        <input type="checkbox" name="vehicle" value="Select">
+                        <br>
+                        <button type="submit" value="10GB">10GB</button>
+                        <input type="checkbox" name="vehicle" value="Select">
+                        <br>
+                        <button type="button" value="upgrade">Upgrade your package</button>
+                    </div>
+                </div>
+            </div>
 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Business Connect</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <label type="text">
+                            <strong>You currently have the 2Mbps package, would you like to upgrade?</strong>
+                            <button type="button" value="upgrade">Upgrade Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Calcuation" title="tCost">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>50MB</td>
+                    <td>R12</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total:</b>
+                    </td>
+                    <td>RXXX-xx</td>
+                </tr>
+            </table>
+            <input type="submit" name="Proceed" value="Proceed">
+        </div>
+
+    </body>
+    <script> 
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+             
+    </script>
 </html>

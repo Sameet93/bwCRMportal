@@ -1,115 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="stylesheet.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script type="text/javascript" src="bwJavascript.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--TopBar-->
+        <div class="topbar">
+            <ul>
+                <li><a href="myaccount.html#products">Sipho Dlamini Cust No:#SIP234C8</a></li>
+                <li> <a href="dashboard.html"> Surfer Zone</a></li>
+                <li>50MB</li>
+                <li> <i class="fa"></i> </li>
+            </ul>
+            
+            <i  id="menu_icon" class="fas fa-bars " href="#" onclick="openNav()"></i>
+            
+        </div>
+        <!--Side Navigation-->
+        <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="dashboard.html">Home</a>
+            <a href="topup.html">Top Up</a>
+            <a href="myaccount.html" class="active">My Account <i class="far fa-user"></i> </a>
+            <a href="myaccount.html#products_pnl">Products</a>
+            <a href="myaccount.html#billing_pnl">Billing</a>
+            <a href="help.html">Help</a>
+        </div>
+        <h1>Help</h1>
 
-<head>
-    <title>MySurf</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="bwJavascript.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+        <!-- Dashboard-->
+        
 
-<body>
-    <div class="topnav" id="myTopnav">
-        <a href="dashboard.html" >Home</a>
-        <a href="topup.html">Top Up</a>
-        <a href="myaccount.html">My Account</a>
-        <a href="help.html" class="active">Help</a>
-        <a href="profile.html">My Account</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <form>
-        <div>
-            <div class="container">
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Contact Us</a>
-                            </h4>
-                        </div>
-                        <div id="collapse1" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <h4>What is your Query?</h4>
-                                <select name="Query?">
-                                    <option value="Site Down">My internet is not working</option>
-                                    <option value="Speed">My internet is Slow</option>
-                                    <option value="Payment">I'm having an issue paying</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div>
-                                    <textarea name="addedDetails" rows="5" cols="20">
-                                    Please give us more details about the problems you are experiencing 
-                                </textarea>
-                                </div>
-                                <button type="submit" value="Send Link">Send</button>
-                            </div>
-                        </div>
-                    </div>
-                    <h3>FAQ's</h3>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Slow Connection?</a>
-                            </h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">No Connection?</a>
-                            </h4>
-                        </div>
-                        <div id="collapse3" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">How do I Top Up?</a>
-                            </h4>
-                        </div>
-                        <div id="collapse4" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">How Do I Pay?</a>
-                            </h4>
-                        </div>
-                        <div id="collapse5" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </div>
-                        </div>
-                    </div>
-    </form>
+    </body>
+    <script> 
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        }
 
-</body>
-
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        } 
+             
+    </script>
 </html>
