@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <div class="box">
-        </dir>
-        <form>
-            <img src="LoginIcon.png" alt="Brightwave logo">
-            <h1>Register1/2</h1>
-            <div class="container">
+    <div class="parent">
+        <div class="boxR">
+            <form>
+                <img src="LoginIcon.png" alt="Brightwave logo">
+                <h1>Register1/2</h1>
+
                 <label for="uname">
                     <b>First Name:</b>
                 </label>
-                <input type="text" placeholder="First Name" name="fname" required>
+                <input type="text" placeholder="First Name" name="fname" required autofocus>
                 <label for="uname">
                     <b>Last Name:</b>
                 </label>
@@ -39,16 +39,17 @@
                 <label for="uname">
                     <b>Confirm Password:</b>
                 </label>
-                <input type="password" placeholder="Re-enter Password" name="cpword" required>
+                <input type="password" placeholder="Re-enter Password" name="cpword" required >
                 <br>
+                <button type="submit" value="Next">Next</button>
                 <input type="checkbox" name="verify" value="agree" required> I agree that the above information entered above is correct
                 <br>
                 <input type="checkbox" name="verify" value="agree" required> have read and agreed to the
                 <a href="#">Terms and Conditions</a>
                 <br>
-                <button type="submit" value="Next">Next</button>
-            </div>
-        </form>
+                
+            </form>
+        </div>
     </div>
 </body>
 
