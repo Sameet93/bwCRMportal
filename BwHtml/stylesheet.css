@@ -41,7 +41,7 @@
     }
 
     #menu_icon {
-        position: absolute;
+        position: fixed;
         right: 5%;
         display: inline;
         font-size: 20px;
@@ -115,6 +115,20 @@ h1
 
 .panel-collapse::selection {
     background-color: orange;
+}
+
+.panel-title {
+    text-align: center;
+}
+
+/*Help Page */
+#message_us_pnl_body {
+    text-align: center;
+}
+
+#subject_text, #message_text {
+    display: inline;
+    border-radius: 25px;
 }
 
 /*Home Page Buttons*/
