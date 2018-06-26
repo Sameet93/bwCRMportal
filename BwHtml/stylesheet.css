@@ -10,16 +10,16 @@
     /*Top Navigation Bar*/
     
     .topbar {
-        background-color: grey;
+        background-color: whitesmoke;
         display: block;
-        color: white;
+        color: orange;
         padding: 15px 5px;
        
     }
 
     .topbar a{
         text-decoration: none;
-        color: white;
+        color:orange;
         
     }   
 
@@ -40,6 +40,8 @@
         align-content: center;
     }
 
+
+    
     #menu_icon {
         position: fixed;
         right: 5%;
@@ -107,18 +109,19 @@ h1
 
 .panel-group {
     margin: 20px 30px;
+    padding: 10vw 0;
 }
 
 .panel-heading:hover  {
     background-color: orange;
 } 
 
-.panel-collapse::selection {
-    background-color: orange;
-}
-
 .panel-title {
     text-align: center;
+}
+
+.panel-title a{
+    text-decoration: none;
 }
 
 /*Help Page */
@@ -126,9 +129,14 @@ h1
     text-align: center;
 }
 
-#subject_text, #message_text {
-    display: inline;
-    border-radius: 25px;
+#subject_txt, #message_txt {
+    display: block;
+    border-radius: 10px;
+}
+
+input {
+    align-content: center;
+
 }
 
 /*Home Page Buttons*/

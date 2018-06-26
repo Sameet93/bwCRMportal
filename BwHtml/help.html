@@ -47,10 +47,10 @@
                 </div>
                 <div class="panel-collapse collapse in" id="faq_pnl_body">
                         <div class="panel-body">
-                            Enter the questions here:
+                           
+                            
 
                         </div>
-                        <input type="dropdown" name="" id="">
                     </div>
             </div>
             <!-- Message Us Panel-->
@@ -63,8 +63,13 @@
                     </div>
                     <div class="panel-collapse collapse" id="message_us_pnl_body">
                             <div class="panel-body" >
-                                <form action="" target="_self">
-
+                                <form method="POST" >
+                                    Subject <input type="text" name="subject"  id="subject_txt" placeholder="Subject">
+                                    <br>
+                                    Message <textarea name="message" id="message_txt" cols="15" rows="5" placeholder="Message"></textarea>
+                                    <br>
+                                    <input type="submit" name="submit" id="btn_submit" value="Send">
+    
                                 </form>
                                     
                             </div>
