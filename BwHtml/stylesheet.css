@@ -25,7 +25,7 @@
         align-self: center;
         align-content: center;
         position: relative;
-        margin: 20pt;
+        /*margin: 20pt;*/
         height: 100%;
     }
 
@@ -43,6 +43,8 @@
         display: block;
         color: orange;
         padding: 15px 5px;
+        -webkit-border-radius: 20px 20px 0px 0px;
+        border-radius: 20px 20px 0x 0px;
        
     }
 
@@ -72,7 +74,7 @@
 
     
     #menu_icon {
-        position: fixed;
+        position: relative;
         right: 5%;
         display: inline;
         font-size: 20px;
