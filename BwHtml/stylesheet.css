@@ -211,4 +211,19 @@
         height:441px;
         overflow-y:auto;
       }
-      
+    table, th, td{
+        border: 1px solid #f9a11b;
+        
+    }
+    table{
+        width: 100%;
+    }
+    td{
+        text-align: center;
+    }
+    th{
+        height: 50px;
+        text-align: center;
+        
+    }
+    
