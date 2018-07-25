@@ -1,10 +1,15 @@
     .container {
-       display: block;
-       position: relative;
-       /*padding: 20px 30px;*/
+        display: block;
+        position: relative;
+        /*padding: 20px 30px;*/
+    }
+
+    .menu {
+        margin: 0px 0px 10px 0px;
     }
 
     .parent {
+        margin-top: 10px;
         display: table;
         margin: 0 auto;
         height: 100%;
@@ -36,31 +41,28 @@
         font-family: helvetica, arial, verdana, sans-serif;
         color: orange;
     }
+
     /*Top Navigation Bar*/
-    
+
     .topbar {
         background-color: whitesmoke;
         display: block;
         color: orange;
         padding: 15px 5px;
-        -webkit-border-radius: 20px 20px 0px 0px;
-        border-radius: 20px 20px 0x 0px;
-       
+        height: 50px;
     }
 
-    .topbar a{
+    .topbar a {
         text-decoration: none;
-        color:orange;
-        
-    }   
+        color: orange;
+    }
 
     .topbar li {
-        display : inline-block;
+        display: inline-block;
         position: relative;
         box-align: center;
         text-align: center;
         margin: 0px 25px;
-        
     }
 
     .topbar ul {
@@ -71,17 +73,21 @@
         align-content: center;
     }
 
+    @media screen and (max-width: 720px) {
+    .topbar ul {
+        display: none;
+    }
+    }
 
-    
     #menu_icon {
-        position: relative;
+        position: absolute;
         right: 5%;
         display: inline;
         font-size: 20px;
-        
     }
 
     /* Side Navigation Bar FUll Width */
+
     .sidenav {
         height: 100%;
         width: 0;
@@ -95,7 +101,7 @@
         padding-top: 60px;
         text-align: center;
     }
-    
+
     .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
@@ -104,11 +110,11 @@
         display: block;
         transition: 0.3s;
     }
-    
+
     .sidenav a:hover {
         color: #f1f1f1;
     }
-    
+
     .sidenav .closebtn {
         position: absolute;
         top: 0;
@@ -116,77 +122,93 @@
         font-size: 38px;
         /*margin-right: 50px; */
     }
-    
+
     @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
     }
+
     /* Navigation Bar  End*/
 
+    /* Headings*/
 
-/* Headings*/
+    h1 {
+        text-align: center;
+        width: 100%;
+        color: orange;
+        padding: 0;
+        top: 30%;
+        font-size: 8vw;
+    }
 
-h1
-{
-    text-align: center;
-    width: 100%;
-    color: orange;
-    padding: 0;
-    top: 30%;
-    font-size:  8vw;
-    
-}
-/*Panel Group*/
+    /*Panel Group*/
 
-.panel-group {
-    margin: 20px 30px;
-    padding: 10vw 0;
-}
+    .panel-group {
+        margin: 20px 30px;
+        padding: 10vw 0;
+    }
 
-.panel-heading:hover  {
-    background-color: orange;
-} 
+    .panel-heading:hover {
+        background-color: orange;
+    }
 
-.panel-title {
-    text-align: center;
-}
+    .panel-title {
+        text-align: center;
+    }
 
-.panel-title a{
-    text-decoration: none;
-}
+    .panel-title a {
+        text-decoration: none;
+    }
 
-/*Help Page */
-#message_us_pnl_body {
-    text-align: center;
-}
+    /*Help Page */
 
-#subject_txt, #message_txt {
-    display: block;
-    border-radius: 10px;
-}
+    #message_us_pnl_body {
+        text-align: center;
+    }
 
-input {
-    align-content: center;
+    #subject_txt, #message_txt {
+        display: block;
+        border-radius: 10px;
+    }
 
-}
+    input {
+        align-content: center;
+    }
 
-/*Home Page Buttons*/
-.dashboard {
-    display: block;
-    position: relative;
-    margin: 5vw;
-    padding: 30vw;
-    height: 10vw;
-    width: 8vw;
-}
+    /*Home Page Buttons*/
 
-#home_btn{
-    position: relative;
-    width: 15vw;
-    height: 30vw;
-}
+    .dashboard {
+        display: block;
+        position: relative;
+        margin: 5vw;
+        padding: 30vw;
+        height: 10vw;
+        width: 8vw;
+    }
 
-#home_btn img {
-    width: 15vw;
-    height: 30vw;
-}
+    #home_btn {
+        position: relative;
+        width: 15vw;
+        height: 30vw;
+    }
+
+    #home_btn img {
+        width: 15vw;
+        height: 30vw;
+    }
+
+    #overlay {
+        background-image:url(/media/img/overlay/transparent.png);
+        color:#efefef;
+        height:450px;
+      }
+
+      div.contentWrap {
+        height:441px;
+        overflow-y:auto;
+      }
+      
