@@ -3,10 +3,7 @@
         position: relative;
         /*padding: 20px 30px;*/
     }
-    h1{
-        width: 30px;
-        height: 20px;
-    }
+
     .menu {
         margin: 0px 0px 10px 0px;
     }
@@ -20,7 +17,8 @@
 
     .box {
         background-color: white;
-        display: table-cell;
+        display: inline-block;
+        padding: 4vh 10vw;
         vertical-align: middle;
         width: 1000px;
         -webkit-border-radius: 20px;
@@ -184,13 +182,26 @@
 
     /*Home Page Buttons*/
 
-    .dashboard {
+    .tile {
+        font-size: 20px;
+        border: 2px solid orange;
+        background-color: white;
+        border-radius: 15px;
+        padding: 30px 40px;
+        display: inline-block;
+        margin: 10px 15px;
+    }
+
+    #btn_contact {
         display: block;
-        position: relative;
-        margin: 5vw;
-        padding: 30vw;
-        height: 10vw;
-        width: 8vw;
+        width: 80vw;
+        padding: 20px 30px;
+        
+    }
+
+    #btn_contact:hover {
+        background-color: lightblue;
+
     }
 
     #home_btn {
@@ -208,12 +219,12 @@
         background-image:url(/media/img/overlay/transparent.png);
         color:#efefef;
         height:450px;
-      }
+    }
 
-      div.contentWrap {
+    div.contentWrap {
         height:441px;
         overflow-y:auto;
-      }
+    }
     table, th, td{
         border: 1px solid #f9a11b;
         
@@ -227,5 +238,6 @@
     th{
         height: 50px;
         text-align: center;
+        
     }
     
