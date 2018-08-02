@@ -7,6 +7,17 @@ function myFunction() {
     }
 }
 
+//Sidenav open and close
+function openNav() {
+    document.getElementById("mysidenav").style.width = "100%";
+} 
+
+function closeNav() {
+    document.getElementById("mysidenav").style.width = "0%";
+
+}
+
+
 function modify_qty(val) {
     var qty = document.getElementById('qty').value;
     var new_qty = parseInt(qty, 10) + val;
@@ -30,7 +41,7 @@ function validatePassword() {
     }
 }
 
-$(function () {
+ /* $(function () {
 
     // if the function argument is given to overlay,
     // it is assumed to be the onBeforeLoad event listener
@@ -49,7 +60,7 @@ $(function () {
         }
 
     });
-});
+}); */
 
 pword.onchange = validatePassword;
 cpword.onkeyup = validatePassword;

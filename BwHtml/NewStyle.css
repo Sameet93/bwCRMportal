@@ -1,0 +1,107 @@
+/*body*/
+body, html{
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg{
+    background-image: url("background.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/*topnav*/
+.topnav {
+    z-index: 0;
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: fixed;
+    height: 8vw;
+    top: 0;
+    width: 100%;
+    /*margin: 0; */
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: darkorange;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3.5vw;
+    padding: 2vh 3vw;
+    height: 100%;
+}
+
+#profile_icon{
+    font-size: 4.5vw;
+    /*z-index: 1;*/
+    margin-left: 3vw;
+    position: relative;
+    top: -1px;
+}
+
+.topnav a:hover {
+    background-color: darkgray;
+    color: white;
+}
+
+/*SideNav*/
+
+#menubar {
+    float: right;
+    font-size: 3.5vw;
+    margin-right: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    transition: 0.3s ease-out;
+    padding-top: 60px;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    z-index: 1;
+    opacity: 0.9;
+    overflow-x: hidden;
+    background-color: darkorange;
+}
+
+.sidenav a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 3.5vw;
+    padding: 15px;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    background-color:whitesmoke;
+    color: darkorange;
+}
+
+/* Positon the close button in the Side nav */
+.sidenav #closebtn{
+    position: absolute;
+    top: 0.4vh;
+    right: 0.7vh;
+    font-size: 7vw;
+    padding: 10px
+}
+
+.sidenav #closebtn:hover{
+    box-shadow: 3px 2px 3px 2px white ;
+    background-color: whitesmoke;
+    color: darkorange; 
+}
+
+

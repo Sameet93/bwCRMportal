@@ -5,7 +5,7 @@
     }
 
     .menu {
-        margin: 0px 0px 10px 0px;
+        margin: 0px;
     }
 
     .parent {
@@ -36,21 +36,21 @@
     }
 
     body {
-        background: url(background.jpg) no-repeat center center;
-        background-repeat: none;
-        background-size: 2460px 1000px;
+        background: whitesmoke;
         font-family: helvetica, arial, verdana, sans-serif;
         color: orange;
+        font-size: 3vw; 
     }
 
     /*Top Navigation Bar*/
 
     .topbar {
-        background-color: whitesmoke;
+        background-color: blue;
         display: block;
         color: orange;
         padding: 15px 5px;
-        height: 50px;
+        height: 100px;
+        margin-bottom: 0px;
     }
 
     .topbar a {
@@ -81,7 +81,7 @@
     }
 
     #menu_icon {
-        position: absolute;
+        position: fixed;
         right: 5%;
         display: inline;
         font-size: 20px;
@@ -142,8 +142,8 @@
         width: 100%;
         color: orange;
         padding: 0;
-        top: 30%;
-        font-size: 8vw;
+       /*top: 30%; */
+        font-size: 10vw;
     }
 
     /*Panel Group*/
@@ -180,29 +180,53 @@
         align-content: center;
     }
 
-    /*Home Page Buttons*/
-
-    .tile {
-        font-size: 20px;
-        border: 2px solid orange;
-        background-color: white;
-        border-radius: 15px;
-        padding: 30px 40px;
-        display: inline-block;
-        margin: 10px 15px;
+    /*Dashboard*/
+    .dashboard {
+      position: relative;
+      display: block;
+      margin: 0;  
+      width: 100%;
+       
+     
     }
 
-    #btn_contact {
+    #wallpaper {
+        width: 100%;
+        height: 100%;
+    } 
+
+    /*Dashboard container*/
+    .grid_container{
+        display: grid;
+        grid-template-columns: 30vw 30vw;
+       /* grid-template-rows: 100px 100px;*/
+        justify-content: center;
+        grid-gap: 2vw;
+        padding: 3vw;
+
+    }
+
+
+    /*Grid items*/
+    .grid_container > div {
+        background-color: red;
+        font-size: 13vw;
+        border-radius: 20px;
+
+    }
+
+
+   /* #btn_contact {
         display: block;
         width: 80vw;
-        padding: 20px 30px;
+        margin: 1vh auto;
+        padding: 2vh 4vw;
         
-    }
+    } */
 
-    #btn_contact:hover {
-        background-color: lightblue;
-
-    }
+    /*#btn_contact:hover {
+        box-sh 
+    } */
 
     #home_btn {
         position: relative;
@@ -215,11 +239,11 @@
         height: 30vw;
     }
 
-    #overlay {
+   /* #overlay {
         background-image:url(/media/img/overlay/transparent.png);
         color:#efefef;
         height:450px;
-    }
+    }*/
 
     div.contentWrap {
         height:441px;
