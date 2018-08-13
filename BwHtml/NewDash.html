@@ -2,21 +2,23 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="NewStyle.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="NewStyle.css" >
+  
     </head>
-    <body>
-        <!--Class for background image -->
-        <div class="bg"></div>
+    <body id="dash_body">
 
-        <!--Top menu -->
-        <div class="topnav" id="mytopnav"> 
-            <a href="">Allen #AD76M</a>
-            <a href="" id="profile_icon"><i class="fa fa-user-circle"></i></a>
-            <a href="javascript:void(0)"  id="menubar" onclick="openNav()">
-                <i class="fa fa-bars"></i>
-            </a>
+    <!--Top menu -->
+    <div class="topnav" id="mytopnav"> 
+        <a href="">Allen #AD76M</a>
+        <a href="" id="profile_icon"><i class="fa fa-user"></i></a>
+        <a href="javascript:void(0)"  id="menubar" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
         </div>
+        <!--Side Nav-->
         <div class="sidenav" id="mysidenav">
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times; </a>
             <a href=""> <i class="fa fa-home"></i>Home</a>
@@ -24,7 +26,24 @@
             <a href=""> <i class="fa fa-credit-card"></i>Billing</a>
             <a href=""> <i class="far fa-question-circle"></i>   Help</a>
         </div>
-       
+
+        <!--Dashbboard-->
+        <div class="dashboard">
+            <h1>Surf Zone</h1>
+            <div class="grid_container">
+                <div class="grid_top_up">Top Up</div>
+                <div class="grid_usage">Usage</div>
+                <div class="grid_billing">Billing</div>
+                <div class="grid_help">Help</div>
+                <div class="grid_message">Message Us</div>
+                <div class="grid_products">Products</div>
+                <div class="grid_browse">browse</div>
+                
+
+
+            </div>
+
+        </div>
              
     </body>
 

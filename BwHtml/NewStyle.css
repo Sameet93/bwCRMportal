@@ -1,31 +1,55 @@
-/*body*/
-body, html{
+/*html*/
+ html{
     height: 100%;
-    overflow: hidden;
     margin: 0;
+    background-color: rgba(245,245, 245, 0.6);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+
 }
 
-.bg{
-    background-image: url("background.jpg");
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
+/*Body*/
+body {
+    overflow-y: auto;
     height: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+
+#help_body {
+    background-image: url("selfie.jpg");
+}
+
+#dash_body {
+    background-image: url("background.jpg");
+}
+
+html {
     overflow: hidden;
-    opacity: 0.15;
-    z-index: -1;
+}
+
+/*Headings*/
+h1 {
+    font-size: 7vw;
 }
 
 /*topnav*/
 .topnav {
     z-index: 0;
     background-color: whitesmoke;
+    display: block;
     overflow: hidden;
-    position: fixed;
-    height: 8vw;
+    /*position: fixed;*/
+    height: 8.5vw;
     top: 0;
     width: 100%;
-    /*margin: 0; */
+    margin: 0 0 10px 0; 
 }
 
 .topnav a{
@@ -40,15 +64,19 @@ body, html{
 }
 
 #profile_icon{
+    float: left;
     font-size: 4.5vw;
-    /*z-index: 1;*/
+    margin: 0;
+    vertical-align: middle;
     margin-left: 3vw;
     position: relative;
-    top: -1px;
+   /* top: 10px; */
+    padding: 0;
+    height: 100%;
 }
 
 .topnav a:hover {
-    background-color: darkgray;
+    background-color: #a9a9a9;
     color: white;
 }
 
@@ -56,8 +84,8 @@ body, html{
 
 #menubar {
     float: right;
-    font-size: 3.5vw;
-    margin-right: 10px;
+    font-size: 4vw;
+    margin-right: 0;
 }
 
 .sidenav {
@@ -70,7 +98,7 @@ body, html{
     right: 0;
     text-decoration: none;
     z-index: 1;
-    opacity: 0.9;
+    opacity: 0.95;
     overflow-x: hidden;
     background-color: darkorange;
 }
@@ -90,18 +118,242 @@ body, html{
 }
 
 /* Positon the close button in the Side nav */
-.sidenav #closebtn{
+.sidenav #closebtn {
     position: absolute;
     top: 0.4vh;
     right: 0.7vh;
     font-size: 7vw;
+    text-decoration: none;
     padding: 10px
 }
 
-.sidenav #closebtn:hover{
+.sidenav #closebtn:hover {
     box-shadow: 3px 2px 3px 2px white ;
     background-color: whitesmoke;
     color: darkorange; 
 }
 
+/*Dashboard Grid*/
 
+.dashboard {
+    margin-top: 8vh;
+    background-color: lightcoral;
+    
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 8vw 8vw 8vw 8vw;
+    grid-template-rows: 100px 100px 100px 100px 80px ;
+    grid-gap: 5vw 3vh;
+    margin: 4vw;
+    justify-content: center;
+    align-content: center;
+    background-color: cyan;
+}
+/*All Grid Tiles */
+.grid_container > div {
+    color: black;
+    padding: 2vw;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+/* Individual Grid Tiles */
+
+.grid_top_up {
+    grid-area: 2/ 2/ span 2/ span 2;
+    background-color: blue;
+
+}
+
+.grid_usage {
+    grid-area: 1/ 2/ span 1/ span3;
+    background-color: greenyellow;
+
+}
+
+.grid_help {
+    grid-area: 4/ 3/ span 1/ span 1;
+    background-color: deeppink;
+
+}
+
+.grid_message {
+    grid-area: 4/ 1/ span 1/ span 2;
+    background-color: darkred;
+}
+
+.grid_products {
+    grid-area: 1/ 1/ span 3/ span 1;
+    background-color: mintcream;
+}
+
+.grid_billing {
+    grid-area: 2/ 4/ span 3/ span 1;
+    background-color: chocolate; 
+}
+
+.grid_browse {
+    grid-area: 5/ 1/ span 1/ span 4;
+    background-color: darkorange;
+}
+
+
+/*Help Page*/
+
+.help_content {
+    padding: 0 3vw;
+}
+
+/*Panel Group*/
+
+.panel-heading.active{
+    background-color: orange;
+    
+}
+
+.panel-heading.active a{
+    color: whitesmoke;
+    
+}
+
+
+
+
+.panel {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.panel-heading {
+    text-align: center;
+    border: none;
+    padding: auto 0;
+
+}
+
+.panel-heading a, .panel-heading a:visited{
+    text-decoration: none;
+    color: darkorange;
+
+} 
+.panel-heading a:hover{
+    color: whitesmoke;
+
+}
+
+.panel-heading:hover {
+    background-color: orange;
+
+}
+
+.panel-body {
+    padding: 3vh 3vw;
+    font-size: 2.5vw;
+    overflow-y: auto;
+
+}
+
+
+
+/*Help Page Form*/
+
+
+input[type=text], textarea {
+    width: 100%;
+    border: 1px solid rgba(255, 165, 0,0.1);
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 3vw;
+    box-shadow: 2px 2px 15px  rgb(129, 128, 128);
+
+}
+
+
+label {
+    color: darkorange;
+    font-size: 3.5vw;
+}
+
+input[type=submit] {
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    box-shadow: 4px 3.5px 15px   rgb(243, 171, 38);
+    cursor: pointer;
+    width: 25vw;
+    border-radius: 6px;
+    margin-top: 10px;
+    position: relative;
+    align-content: center;
+}
+
+input[type=submit]:hover {
+    background-color: mediumblue;
+    box-shadow: 4px 3px 12px  rgb(47, 60, 247);
+
+}
+
+/*Contact Us*/
+
+/*Contact Us-Visit Us */
+
+.map_container {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(244, 244, 244, 0.4);
+    text-align: center;
+}
+
+.office_map {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    padding: 8px;
+}
+
+.location_list {
+    list-style-type: none;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.location_list:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.location_list iframe{
+    width: 100%;
+    height: 60%;
+    border: 1px solid orange;
+    
+}
+
+.map_header {
+    background-color: rgba(77, 133, 51, 0.63);
+    color: white;
+    font-size: 3.5vw;
+    padding: 7px ;
+}
+
+.location_list li {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    
+}
+
+.location_list .map_address {
+    background-color: #eee;
+    font-size: 3vw;
+    color: black;
+    padding: 0 5px;
+}
