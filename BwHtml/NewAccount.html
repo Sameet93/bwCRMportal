@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="NewStyle.css" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body id="my_account">
+    <!--Top menu -->
+    <div class="topnav" id="mytopnav">
+        <a href="NewAccount.html">Allen #AD76M</a>
+        <a href="NewAccount.html" id="profile_icon"><i class="fa fa-user"></i></a> <!--Links to My Profile Panel-->
+        <a href="javascript:void(0)"  id="menubar" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--Side Nav-->
+    <div class="sidenav" id="mysidenav">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times; </a>
+        <a href="NewDash.html"> <i class="fa fa-home"> </i> &ensp;  Home</a>
+        <a href="NewTopUp.html"> <i class="fa fa-wifi"></i> &ensp; Top Up</a>
+        <a href="NewAccount.html"> <i class="fa fa-credit-card"></i> &ensp; Billing</a>
+        <a href="NewHelp.html"> <i class="far fa-question-circle"></i> &ensp;   Help</a>
+    </div>
+
+    <!--MyAccount Page Content-->
+    <div class="account_content">
+        <h2>My Account</h2>
+        <div class="panel-group" id="accordion">
+            <!--Profile Panel-->
+            <div class="panel panel-default" id="message_panel">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion"  href="#collapse1">
+                <h4 class="panel-title">
+                My Profile <i class="fas fa-user"></i>
+                </h4>
+                </a>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse ">
+                <div class="panel-body">
+                    <form action="" id="profile_form">
+                        <label for="profile_title">Title:</label>
+                        <select name="Title" id="profile_title" >
+                          <option value="Miss">Miss</option>
+                          <option value="Mrs">Mrs</option>  
+                          <option value="Mr">Mr</option>  
+                          <option value="Dr">Dr</option>  
+                          <option value="Ps">Ps</option>  
+                          <option value="Prof">Prof</option>  
+                        </select>
+                        <br>
+                        <label for="profile_firstname" >First Name:</label>
+                        <span id="profile_firstname">Sipho</span> &ensp;
+                        <label for="profile_surname" >Last Name:</label>
+                        <span id="profile_surname">Dlamini</span>
+                        <br>
+                        <label for="profile_number">Cell:</label>
+                        <span id="profile_number">073848594</span> &ensp; <a href="#">Edit</a>
+                        <br>
+                        <label for="profile_email">Email:</label>
+                        <span id="profile_email">sipho@outlook.com </span> &ensp; <span><a href="#">Edit</a> </span>
+                        <br>
+                        <div class="suburb_search">
+                            <label for="profile_suburb">Suburb:</label>
+                            <input type="text" placeholder="Enter Suburb" name="Suburb" id="profile_suburb">
+                        </div>
+
+                        <label for="profile_occupation">Occupation:</label>
+                        <select name="Occupation" id="profile_occupation">
+                            <option value="highschool">High School</option>
+                            <option value="student">Student</option>
+                            <option value="employed">Employed</option>
+                            <option value="self-employed">Self-Employed</option>
+                            <option value="Job-seeking">Job Seeking</option>
+                            <option value="retired">Retired</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="Update Profile">
+                        <hr>
+                        <p style="font-size: 10px">*Disclaimer: This information complies with the POPI act and all other
+                            stuff related to what w do with the data we collect.
+
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            </div>
+             <!--Usage Panel-->
+            <div class="panel panel-default" id="faq_panel">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> <h4 class="panel-title">
+                Usage <i class="fas fa-chart-bar"></i>
+                </h4></a>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <h4>Usage</h4>
+                    <img src="demochart.PNG" alt="Usage Chart" width= "30%" height="30%"  style="float: right; position: relative; top: -10px"> <!--Enlarge when clicked-->
+
+                    <p>
+                        Current Balance:  <span id="usage_total"> 50</span>MB
+                        <br>
+                        Total Usage:  <span id="usage_total"> 150</span>MB
+                        <br>
+                        Last Top up: <span id="usage_topup"> [date of last top up]</span>
+                        <br>
+                        <input type="button" id="usage_btnTopUp"  value="Top Up">
+                        <hr>
+                        If you have any questions go to the Help Page and we'll gladly help you.
+                
+
+
+                    </p>
+                </div>
+            </div>
+            </div>
+            <!--Billing Panel-->
+            <div class="panel panel-default" id="contact_panel">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h4 class="panel-title">
+                    Billing <i class="fa fa-credit-card"></i>
+                    </h4></a>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4>Summary</h4>
+                        <label for="billing_top_up">Last Top Up</label>
+                        <span id="billing_top_up_date">[Date for Last Top Up]:</span> <span id="billing_top_up_amount">50MB for R20</span>
+                        &ensp; <a href="#">Check balance</a> <!--Goes to Usage panel-->
+                        <br>
+                        <label for="billing_average">Average Top Up/month</label>
+                        <span id="billing_average"> R53.00 </span>
+                        <hr>
+                        <h4>Detailed Billing</h4>
+                        <p>
+                            <label for="biling_start">From:</label> <input type="date" name="Billing Date" id="billing_start">
+                            <label for="biling_end">To:</label> <input type="date" name="Billind Date End" id="billing_end">
+        
+                        </p>
+
+                        <br>
+
+                        <button id="btn_billing">Download </button>
+                        <button id="btn_billing_email">Email </button>
+                        Top Up Now!!
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bwJavascript.js"></script>
+<script >
+    //accordion for FAQ
+    var question = document.getElementsByClassName("faq_question");
+    var i;
+
+    for (i = 0; i < question.length; i++) {
+    question[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+    }
+
+</script>
+
+</html>

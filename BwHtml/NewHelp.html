@@ -8,9 +8,9 @@
 </head>
 <body id="help_body">
     <!--Top menu -->
-    <div class="topnav" id="mytopnav"> 
-        <a href="">Allen #AD76M</a>
-        <a href="" id="profile_icon"><i class="fa fa-user"></i></a>
+    <div class="topnav" id="mytopnav">
+        <a href="NewAccount.html">Allen #AD76M</a> <!--Links to My Account-->
+        <a href="NewAccount.html" id="profile_icon"><i class="fa fa-user"></i></a> <!--Links to My Profile panel on My  Account-->
         <a href="javascript:void(0)"  id="menubar" onclick="openNav()">
             <i class="fa fa-bars"></i>
         </a>
@@ -18,58 +18,296 @@
     <!--Side Nav-->
     <div class="sidenav" id="mysidenav">
         <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times; </a>
-        <a href=""> <i class="fa fa-home"></i>Home</a>
-        <a href=""> <i class="fa fa-wifi"></i> Top Up</a>
-        <a href=""> <i class="fa fa-credit-card"></i>Billing</a>
-        <a href=""> <i class="far fa-question-circle"></i>   Help</a>
+        <a href="NewDash.html"> <i class="fa fa-home"></i>Home</a>
+        <a href="NewTopUp.html"> <i class="fa fa-wifi"></i> Top Up</a>
+        <a href="NewAccount.html"> <i class="fa fa-credit-card"></i>Billing</a> <!--Links to Billing Panel o My Account-->
+        <a href="NewHelp.html"> <i class="far fa-question-circle"></i>   Help</a>
     </div>
-    
+
     <!--Help Page Content-->
     <div class="help_content">
         <h2>Help</h2>
-        <p><strong>Important:</strong> Our <strong>Customer Service Team</strong> is here to make sure you have a super experience with our service. Speak to us now <i></i>
+        <p><strong>Important:</strong> Our <strong>Customer Service Team</strong>
+            is Here to make sure you have an awesome experience with our service. 
+            Speak to us today. We'd love to hear from you! <i class="fa fa-heart" style="color: red"></i>
         </p>
         <div class="panel-group" id="accordion">
             <!--Message Panel-->
-            <div class="panel panel-default">
-            <div class="panel-heading active">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+            <div class="panel panel-default" id="message_panel">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion"  href="#collapse1">
                 <h4 class="panel-title">
-                Send us a message <i class="fas fa-comment-alt"></i> 
+                Send us a message   <i class="fas fa-comment-alt"></i>
                 </h4>
                 </a>
             </div>
             <div id="collapse1" class="panel-collapse collapse ">
                 <div class="panel-body">
                     <form action="" id="help_form">
-                        <label for="fsubject" >Subject</label>
-                        <input type="text" id="fsubject" name="Subject" placeholder="Enter your subject...">
-                        <label for="help_message">Message</label>
-                        <textarea name="Message" id="help_message" cols="30" rows="6" placeholder="Enter your message..."></textarea>
+                        <label for="fsubject" >Subject</label> <br>
+                        <input type="text" id="fsubject" name="Subject" placeholder="Enter your subject..."> <br>
+                        <label for="help_message">Message</label> <br>
+                        <textarea name="Message" id="help_message" cols="30" rows="6" placeholder="Enter your message..."></textarea><br>
                         <input type="submit" value="Send" >
-                    
+
                     </form>
                 </div>
             </div>
-           
+
             </div>
              <!--FAQ Panel-->
-            <div class="panel panel-default">
+            <div class="panel panel-default" id="faq_panel">
             <div class="panel-heading">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> <h4 class="panel-title">
-                Frequently Asked Questions <i class="fa fa-question-circle"></i> 
+                Frequently Asked Questions <i class="fa fa-question-circle"></i>
                 </h4> </a>
             </div>
             <div id="collapse2" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="faq_container">
+                        <!--Search Bar-->
+                        <div class="faq_search">
+                            <label for="#searchbar">Search:</label>
+                           <input  type="text"  id="searchbar" onkeyup="searchFilter()" name="faq_search_bar" title="Type in a keyword/phrase" maxlength="50" placeholder="Enter keyword/phrase...">
+                           
+                        </div>
+                        <ol id="faqlist" class="faq_list" >
+                            <!--Portal not loading-->
+                            <li> 
+                                
+                                <div class="faq_question">
+                                    <a href="#">I can see the wireless network, but I can't log in – what's wrong?</a>
+                                </div>
+                                <div class="faq_answer">
+                                    <p>
+                                        <h4>Try the following:</h4>                                      
+                                        <ol>
+                                            <li>Turning your WiFi off and on again </li>
+                                            <li>Forget the wireless network from your device Wi-Fi settings (delete it) and then add it again. </li>
+                                            <li>Rebooting your device </li>
+                                        </ol>
+                                        It’s possible that your location may be causing interference with the Wi-Fi signal – try moving to another location to attempt to connect to the service.
+                                    </p>
+                                </div>
+                            </li>
+                            <!--Can't detect network-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question">
+                                    <a href="#">I can't see the wireless network – what can I do? </a>
+                                </div>
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                    <p>
+                                        <ul>
+                                            <li>Try moving to another location and scanning again, if you are in a basement or surrounded with high buildings was that could also cause poor signal. </li>
+                                            <li>Make sure that wireless is turned on in your device settings, it’s possible that it has been turned-off accidentally.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                            <!--Connection keeps dropping-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question">
+                                    <a href="#"> Network connection keeps dropping, how can i fix this?
+                                    </a>
+                                </div>
+                                
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                You may be moving out of range of the WiFi.
+                                                Check your device’s WiFi signal strength indicator and move to a different location.
+                                            </li>
+                                            <li>
+                                                Some devices may automatically disconnect you from the wireless network when they have not been used for a while.
+                                            </li>
+                                            <li>
+                                                Try another location.It’s also possible that your location may be causing interference with the WiFi signal.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Length of browsing period (time)-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question" >
+                                    <a href="#">  How long can I use the BrightWave WiFi for?
+                                    </a>
+                                </div>
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                    <p>
+                                        You have 50MB of complentary free data per day per device.
+                                        So as long as you havnt used-up the daily amount you can browse the web for as long as you wish!
+                                        Once your data has been depleted you may <span> <a href=""> top-up</a></span> to continue browsing.
+                                    </p>
+                                </div>
+                                <!--Can't log in-->
+                                <li>
+                                    <!--Question-->
+                                    <div class="faq_question">
+                                        <a href=""> I can see the wireless network, but I can't log in – what's wrong?
+                                        </a>
+                                    </div>
+                                    <!--Answer for FAQ-->
+                                    <div class="faq_answer">
+                                        <p>
+                                            Try the following:
+                                            <ol>
+                                                <li>Turning your WiFi off and on again </li>
+                                                <li>Forget the wireless network from your device Wi-Fi settings (delete it) and then add it again. </li>
+                                                <li>Rebooting your device </li>
+                                            </ol>
+                                        </p>
+                                    </div>
+                                </li>
+                            </li>
+                            <!-- What is OTP and how to use it-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question">
+                                    <a href="#">What is an OTP and how do I use it?
+                                    </a>
+                                </div>
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                OTP stands for One Time Pin. It is a method of verification to make sure that you are really you – and not a robot.
+                                            </li>
+                                            <li>
+                                                When you receive the SMS, click on the link and it will send you to a web page. <br>
+                                                Go back to your WiFi settings, click on 'BrightWave WiFi' and log in.
+                                                If you are using an Apple Device. You may receive the SMS split into two parts: a message; and a preview message. Once you have clicked on the preview message; there is no need to click on the message again because you wil already be verified. After clicking on 'tap to preview'; go back to your wifi settings and log in.
+                                                Alternatively, you can open your browser and you will be redirected to the login page.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                            <!--Is WiFi-Limited-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question">
+                                    <a href=""> Is the Wi-Fi unlimited?
+                                    </a>
+                                </div>
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                    <p>
+                                       The free Wi-Fi is limited to 50MB per day. However you can top-up more data on the 'Top Up' page
+                                       to increase your data.
+                                       <strong>Please note:</strong> each data package lasts for a <strong>30 days only</strong>
+                                       afterwhich it is deleted.
+                                    </p>
+                                </div>
+                            </li>
+                            <!--Forgot my Password-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question">
+                                    <a href=""> Forgot my Password, how can I login?
+                                    </a>
+                                </div>
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                    <p>
+                                        On the Registration/Login page follow these steps:
+                                        <ol>
+                                            <li>Click on 'Forgot Password'</li>
+                                            <li>Enter the phone number you used to register - make sure it starts with '27'</li>
+                                            <li>You will receive an SMS with a link. Click on that link and you will be redirected to change your password</li>
+
+
+                                        </ol>
+                                    </p>
+                                </div>
+                            </li>
+                            <!--Start browsing/surfing the web-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question">
+                                    <a href="#"> How can I start browsing the web after I have registered?
+                                    </a>            
+                                </div>
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                    <p>
+                                        After logging in successfully, you will land on the dashboard.
+                                        Click on 'Start Surfing' to begin browsing the web.
+                                    </p>
+                                </div>
+                            </li>
+                            <!--How much data do I have Left-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question">
+                                    <a href="#"> How much data do I have left?/ How much data have I used? (Data balance)
+                                    </a>
+                                    </div>
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                <p>
+                                    On the home page of the dsashboard there is a button with your balance displayed.
+                                    You may also navigate to 'Top-Up' page.
+                                    You will be able to view your usage as well as downnload a usage report.
+
+                                </p>
+                                </div>
+                            </li>
+                            <!--Register more than one account-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question">
+                                    <a href=""> Can I register more than one account?
+                                    </a>
+                                </div>
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                    <p>
+                                        No. However you can add multiple products to your account such as Home connect.
+                                    </p>
+                                </div>
+                            </li>
+                            <!--My Question isn't here-->
+                            <li>
+                                <!--Question-->
+                                <div class="faq_question">
+                                    <a href="#message_panel" > My question isn't here.
+                                    </a>
+                                </div>
+                                <!--Answer for FAQ-->
+                                <div class="faq_answer">
+                                    <p>
+                                        No problem! You can try the following options:
+                                        <ol>
+                                            <li>
+                                                <a href="#message_panel"  >Send us a message</a> and we'll get back to you.
+                                            </li>
+                                            <li>
+                                                <a href="#contact_panel">Give us a call</a> and our Support Team will assist you.
+                                            </li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ol>
+                    </div>
                 </div>
             </div>
             </div>
             <!--Contact Us Panel-->
-            <div class="panel panel-default">
+            <div class="panel panel-default" id="contact_panel">
                 <div class="panel-heading">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h4 class="panel-title">
-                    Contact Us <i class="fa fa-phone"></i>  
+                    Contact Us <i class="fa fa-phone"></i>
                     </h4></a>
                 </div>
                 <div id="collapse3" class="panel-collapse collapse">
@@ -79,14 +317,14 @@
                             <strong>Support: </strong><a href="mailto:support@brightwave.co.za">support@brightwave.co.za</a>
                             <hr>
                             <h4>Call Us:</h4>
-                            <strong>Randburg Office (Head Office): </strong> <a href="tel:">(010) 330 0900</a>    
+                            <strong>Randburg Office (Head Office): </strong> <a href="tel:">(010) 330 0900</a>
                             <br>
-                            <strong>Soweto Office (Branch): </strong> <a href="tel:">(010) 330 0912</a>   
+                            <strong>Soweto Office (Branch): </strong> <a href="tel:">(010) 330 0912</a>
                             <br>
-                            <strong>Umtata Office (Branch): </strong>  <a href="tel:">(010) 330 0902</a> 
+                            <strong>Umtata Office (Branch): </strong>  <a href="tel:">(010) 330 0902</a>
                             <br>
-                            <p>
-                            <strong>Cell:</strong> <a href="tel:">076 950 6480</a> 
+                        </p>
+                            <strong>Cell:</strong> <a href="tel:">076 950 6480</a>
                             <a href="https://wa.me/27769506480"> <span style="font-size: 3.5vw; float: right; background-color: rgba(134, 236, 134, 0.466); color: green"> Click to Whatsapp<i class="fab fa-whatsapp"></i> </span></a>
                             <hr>
                             <h4>Visit Us:</h4>
@@ -104,31 +342,44 @@
                                         <li class="map_address">Shop No: 8, Protea Point Shopping Center, Ndaba St, Protea North, Johannesburg,1818</li>
                                         <li><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28621.34017426495!2d27.831171!3d-26.272452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0fce34c9bd1acb5!2sProtea+Point+Shopping+Centre!5e0!3m2!1sen!2sza!4v1534171435198" frameborder="1"  allowfullscreen></iframe></iframe></li>
                                     </ul>
-                                 </div>
-                                 <div class="office_map">
+                                </div>
+                                <div class="office_map">
                                     <ul class="location_list">
                                         <li class="map_header">Umtata (Branch)</li>
                                         <li class="map_address">24 Hospital Road,Umtata Central, Mthatha, 5100</li>
                                         <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.5645033550677!2d28.77331801503309!3d-31.590988281346277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e5fd0b0d9e1e8f5%3A0x8f4a0e01abe2832d!2sHospital+Rd%2C+Umtata+Central%2C+Mthatha%2C+5100!5e0!3m2!1sen!2sza!4v1534171832644" frameborder="1"  allowfullscreen></iframe></li>
                                     </ul>
-                                 </div> 
+                                </div>
                             </div>
-                            
-                            </p>
-                            
 
-                        </p>
-        
+
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
-    
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="bwJavascript.js"></script>
+<script >
+    //accordion for FAQ
+    var question = document.getElementsByClassName("faq_question");
+    var i;
 
+    for (i = 0; i < question.length; i++) {
+    question[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+    }
+
+</script>
 
 </html>
