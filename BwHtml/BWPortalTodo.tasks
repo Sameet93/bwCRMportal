@@ -1,0 +1,81 @@
+Pages:
+    ☐ Back to top for every page
+    Help Page:
+        Accordion:
+            ✔ Basic Accordion setup @done (8/13/2018, 4:07:15 AM)
+            ✔ Colour of Active panel @done (8/13/2018, 2:51:42 PM)
+            ✔ Icons for panels @done (8/13/2018, 7:14:55 AM)
+            ✔ Colour change on hover @done (8/13/2018, 11:01:20 AM)
+            ✘ Icon change when Active @cancelled (8/13/2018, 7:03:01 PM)
+            ☐ Link individual panel to another page
+        Message us:
+            ✔ Basic form setup @done (8/13/2018, 5:31:34 AM)
+            ☐ Verification of form
+            ☐ Icon next to Send Button
+            ☐ Limit number of characters in the subject and text area boxes
+            ☐ Error Messages
+            ☐ Success Message
+            ☐ Rate our Service
+        Contact us: 
+            ✔ Whatsapp message @done (8/13/2018, 6:58:45 AM)
+            ✔ Div with Contact information @done (8/13/2018, 6:43:43 AM)
+            ✔ Phone numbers link to telphone @done (8/13/2018, 6:43:39 AM)
+            ✔ Icon Link to map for each address @done (8/13/2018, 6:26:49 PM)
+            ☐ Opening hours and days ( next to "Visit Us" )
+            ☐ Scroll to top button
+            ☐ Body text font-size
+        FAQ:
+
+            ✘ List of Most Common questions - when clicked an overlay with the answer appears @cancelled (8/15/2018, 12:40:05 PM)
+            ✘ Overlay for Answers @cancelled (8/14/2018, 12:55:30 PM)
+            ☐ Categorise questions
+            ✘ If a category is selected, then all other questions are hidden ( Javascript function) @cancelled (8/29/2018, 7:13:03 AM)
+            ☐ Link Top Up for FAQ item " Data depletion"
+            ✔ Search functionality @done (8/29/2018, 12:55:37 PM)
+            ✔ Limit character length for search @done (8/17/2018, 12:33:10 PM)
+            ☐ Headings for each section category
+            ☐ Link accordion to questions
+            ☐ Limit no. of characters for the search bar
+            ☐ Load Answers
+            ☐ Categorise FAQs with drop down list
+            ☐ Link to Website with more FAQs
+            ☐ Spell check and grammar
+            ☐ Complete FAQ for the rest of the portal ( Top Up, Biling, My Account, etc) 
+            
+
+    Top Up:
+        Usage:
+            ☐ Usage balance per product
+            ☐ Download usage report
+        Top Up:
+            ☐ Validation
+            Pay with 1Voucher:
+                ☐ Validation ( numbers only, length)
+            ☐ Error Message
+            ☐ Confirmation overlay
+            ☐ Success Page
+
+
+    MyAccount:
+        ☐ Add "My account to side menu"
+        Profile: 
+            ✔ Form items @done (8/29/2018, 2:18:53 PM)
+            ☐ Form Validation
+            ☐ Option to edit
+            ☐ Confirmation Message that shows summary of user information
+            ☐ Error Message
+        Usage:
+            ☐ Graph
+            ☐ Link to Top Up
+            ☐ Link to "Contact Us" page for more information and enquiries
+        Biling:
+            ☐ Download
+            ☐ Request biling to be emailed
+            ☐ Link to Top Up
+
+
+    Styling:
+        
+
+
+
